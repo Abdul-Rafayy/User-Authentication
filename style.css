@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-container {
+        width: 45%;
+    }
+}
+
+
+
+
+
+
+
+/* .btn{
+    padding: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(-45deg,yellow,rgb(0,254,0));
+    width: 128px;
+    height: 48px;
+    z-index: -1;
+    inset: 0;
+    left: -4px;
+    top: -4px;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 20px;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(-45deg,yellow,rgb(0,254,0));
+    transform: scale(0.95);
+    filter: blur(20px);
+    inset: 0;
+    z-index: -1;
+    border-radius: 20px;
+}
+.btn:active:after{
+    filter: blur(30px);
+}
+.btn:active::before{
+    transform: rotate(-180deg);
+}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/login.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Register</h2>
+            <label>Name<br><input type="text" placeholder="name" id="r-name" class="input-field"></label><br>
+            <label>Email<br><input type="email" placeholder="email" id="r-email" class="input-field"></label><br>
+            <label>Password<br><input type="password" placeholder="password" id="r-password" class="input-field"></label><br>
+            <button onclick="register()" class="btn">Register</button>
+        </div>
+        <div class="form-container">
+            <h2>Login</h2>
+            <label>Email<br><input type="email" placeholder="email" id="l-email" class="input-field"></label><br>
+            <label>Password<br><input type="password" placeholder="password" id="l-password" class="input-field"></label><br>
+            <button onclick="login()" class="btn">Login</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
